@@ -5,7 +5,8 @@ http://meyerweb.com/eric/tools/css/reset/
 
 #case-studies {
   max-width: 1000px;
-  margin-top: 50px
+  margin-top: 50px;
+  display: table;
 }
 
 #case-studies h2 {
@@ -75,6 +76,21 @@ table {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+#case-studies a {
+    position: absolute;
+    bottom: 0;
+}
+
+#case-studies .row {
+    display: table-row;
+}
+
+#case-studies div.row div {
+    display: table-cell;
+    float: none;
+    position: relative;
 }
 
 #case-studies i.fa {
