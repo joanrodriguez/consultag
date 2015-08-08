@@ -1,27 +1,26 @@
-    /*
+/*
 CSS Reset
 http://meyerweb.com/eric/tools/css/reset/
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+#case-studies {
+  max-width: 1000px;
+  margin-top: 50px
+}
+
+#case-studies h2 {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#middle {
+  border-left: 1px solid #e0e0e0;
+  border-right: 1px solid #E0E0E0;
+}
+
+.navbar .container-fluid {
+    margin-right: 25px;
 }
 
 img#logo {
@@ -78,6 +77,13 @@ table {
           box-sizing: border-box;
 }
 
+#case-studies i.fa {
+    text-align: center;
+    font-size: 4em;
+    width: 100%;
+    margin: 30px 0;
+}
+
 html, body {
   width: 100%;
   height: 100%;
@@ -86,9 +92,9 @@ html, body {
 body {
   background: white;
   font-family: 'Montserrat', sans-serif;
-  color: #fff;
   line-height: 1.3;
   -webkit-font-smoothing: antialiased;
+  font-size: 1.7em;
 }
 
 .container-fluid.no-margin {
@@ -107,6 +113,7 @@ body {
   overflow: hidden;
   background: #900000;
   position: relative;
+  color: white;
 }
 
 #intro {
@@ -134,7 +141,6 @@ h1::after {
 }
 p {
   margin: 0 0 30px 0;
-  font-size: 24px;
 }
 .btn {
   display: inline-block;
@@ -153,8 +159,9 @@ p {
           transition: all 0.4s;
 }
 .btn:hover {
-  color: #005544;
-  border-color: #005544;
+  color: #900000;
+  border-color: white;
+  background-color: white;
 }
 
 @media only screen and (max-width: 1000px) {
