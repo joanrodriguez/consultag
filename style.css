@@ -3,21 +3,29 @@ CSS Reset
 http://meyerweb.com/eric/tools/css/reset/
 */
 
-#case-studies {
+.container {
   max-width: 1000px;
+}
+
+#case-studies {
   margin-top: 50px;
   display: table;
 }
 
+#case-studies p {
+  line-height: 1.5em;
+  margin-bottom: 1em;
+}
+
 #case-studies h2 {
-  font-size: 1.5em;
+  font-size: 1.2em;
   text-transform: uppercase;
   text-align: center;
 }
 
 #middle {
-  border-left: 1px solid #e0e0e0;
-  border-right: 1px solid #E0E0E0;
+  border-left: 1px dotted #ccc;
+  border-right: 1px dotted #ccc;
 }
 
 .navbar .container-fluid {
@@ -36,11 +44,17 @@ img#logo {
     padding-top: 0;
 }
 
-.navbar-cab .navbar-nav>li>a {
+.navbar-cab .navbar-nav>li>a, .navbar-cab .navbar-nav>li>a:hover, .navbar-cab .navbar-nav>li.active>a:hover {
   text-transform: uppercase;
+  background-color: transparent;
   color: black;
   font-size: 0.8em;
 }
+
+.navbar-cab .navbar-nav>li>a:hover {
+  font-weight: bold;
+}
+
 .navbar-cab .navbar-nav>li.active>a {
   background-color: transparent;
   color: #900000;
@@ -78,18 +92,27 @@ table {
           box-sizing: border-box;
 }
 
+.footer {
+    background-color: #222222;
+    margin-top: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+    font-size: 80%;
+}
+
 #case-studies a {
     position: absolute;
     bottom: 0;
 }
 
-#case-studies .row {
-    display: table-row;
+#case-studies a span.glyphicon {
+  font-size: 0.75em;
 }
 
+
 #case-studies div.row div {
-    display: table-cell;
-    float: none;
+    min-height: 480px;
     position: relative;
 }
 
@@ -99,6 +122,26 @@ table {
     width: 100%;
     margin: 30px 0;
 }
+
+#team img {
+  width: 70%;
+  margin: auto;
+  display: block;
+}
+
+#team h2 {
+  font-size: 1em;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#team h3 {
+  font-size: 0.8em;
+  text-align: center;
+  margin: 10px auto 15px auto;
+}
+
 
 html, body {
   width: 100%;
