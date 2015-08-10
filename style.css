@@ -130,10 +130,11 @@ table {
 }
 
 #team h2 {
-  font-size: 1em;
+  font-size: 0.8em;
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 10px;
+  font-weight: bold;
 }
 
 #team h3 {
